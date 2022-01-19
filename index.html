@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="form__wrapper">
+		<div class="calculation-field">
+			<p class="example" id="calculation"></p>
+			<p class="answer" id="answer">0</p>
+		</div>
+		<button class="button button--action">%</button>
+		<button class="button button--action">CE</button>
+		<button class="button button--action" id="operator-clear">C</button>
+		<button class="button button--action" id="operator-delete">DEL</button>
+		<button class="button button--action button--complex-operator" data-operator="1/x"><sup>1</sup>&#x2044;<sub>x</sub></button>
+		<button class="button button--action button--complex-operator" data-operator="** 2">x<sup>2</sup></button>
+		<button class="button button--action button--complex-operator" data-operator="** 1/2">&#8730;x</button>
+		<button class="button button--action button--standard-operator" data-operator="/">&#247;</button>
+		<button class="button button--number" id="number-7">7</button>
+		<button class="button button--number" id="number-8">8</button>
+		<button class="button button--number" id="number-9">9</button>
+		<button class="button button--action button--standard-operator" data-operator="*">&#215;</button>
+		<button class="button button--number" id="number-4">4</button>
+		<button class="button button--number" id="number-5">5</button>
+		<button class="button button--number" id="number-6">6</button>
+		<button class="button button--action button--standard-operator" data-operator="-">-</button>
+		<button class="button button--number" id="number-1">1</button>
+		<button class="button button--number" id="number-2">2</button>
+		<button class="button button--number" id="number-3">3</button>
+		<button class="button button--action button--standard-operator" data-operator="+">+</button>
+		<button class="button button--number" id="unary-minus"><sup>+</sup>&#x2044;<sub>-</sub></button>
+		<button class="button button--number" id="number-0">0</button>
+		<button class="button button--number" id="decimal-separator" data-operator=".">,</button>
+		<button class="button button--result" id="operator-result">=</button>
+	</div>
+	<script src="js/main.js"></script>
+	<script src="js/dragdrop.js"></script>
+</body>
+</html>
